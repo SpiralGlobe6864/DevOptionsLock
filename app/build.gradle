@@ -7,7 +7,7 @@ android {
         applicationId 'com.kuroneko.devoptionslock'
         minSdk 26
         targetSdk 30
-        versionCode 12
-        versionName '1.2.0'
+        versionCode 14
+        versionName '1.2.3'
     }
 }

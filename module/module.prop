@@ -1,6 +1,6 @@
 id=devoptionslock
 name=Dev Options Lock
 author=kuroneko
-version=v1.2.0
-versionCode=12
+version=v1.2.3
+versionCode=14
 description=Root-level Developer Options gate with password-controlled page access; re-locks when leaving Developer Options and fails open on module removal.

@@ -24,3 +24,19 @@ The module cannot prevent an unrestricted root user from modifying or replacing 
 ## GitHub Actions
 
 `.github/workflows/build.yml` builds the debug APK and root module on every push/PR. Pushing a tag such as `v1.1.0` additionally creates a GitHub Release containing both files.
+
+
+## Build
+
+Use JDK 17. The project uses Android Gradle Plugin 8.9.2 and Gradle 8.11.1, with only Google Maven, Maven Central, and the Gradle Plugin Portal.
+
+Local build: `gradle :app:assembleDebug`
+
+GitHub Actions: upload the project, rename `GITHUB_ACTIONS_WORKFLOW.yml` to `.github/workflows/build.yml`, then open **Actions** and run **Build DevOptionsLock**. Creating a tag such as `v1.2.3` also creates a GitHub Release with the APK and root module.
+
+
+## Local build
+
+Windows: `gradlew.bat assembleDebug` (this project wrapper delegates to the Gradle installed on your PATH).
+
+GitHub Actions: upload the project, rename `GITHUB_ACTIONS_WORKFLOW.yml` to `.github/workflows/build.yml`, then run the workflow.

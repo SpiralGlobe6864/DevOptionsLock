@@ -1,0 +1,16 @@
+DevOptionsLock v1.2.0 - GitHub Web Upload
+
+1. Upload ALL files in this folder to the ROOT of your GitHub repository.
+2. This package intentionally does NOT include .github/ because GitHub's web drag-and-drop upload may hide dot-directories.
+3. After uploading, open GITHUB_ACTIONS_WORKFLOW.yml on GitHub and click the pencil/Edit button.
+4. Change the filename to:
+   .github/workflows/build.yml
+5. Commit the change.
+6. Open Actions. The workflow will build the APK and root module.
+7. To publish a release, create/push a tag such as v1.2.0. The workflow will create a GitHub Release and attach the APK and module ZIP.
+
+The Android project itself is otherwise complete. The root module source is under module/.
+
+
+Local build after Gradle is installed:
+gradlew.bat assembleDebug
