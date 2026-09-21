@@ -1,0 +1,13 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.kuroneko.devoptionslock'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.kuroneko.devoptionslock'
+        minSdk 26
+        targetSdk 30
+        versionCode 12
+        versionName '1.2.0'
+    }
+}
